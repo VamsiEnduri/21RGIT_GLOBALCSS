@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive CSS Task</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    background-color: #333;
+    padding: 10px 20px;
+    z-index: 10;
+    width: 100%;
+}
+
+.logo {
+    /* position: absolute;
+    left: 20px;
+    top: 10px; */
+    color: white;
+    font-size: 24px;
+}
+
+.navigation ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.navigation li {
+    margin: 0 10px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navigation a:hover {
+    background-color: #555;
+}
+
+/* Main Content */
+.content {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+article {
+    flex: 3;
+    background: linear-gradient(45deg, #f3ec78, #af4261);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+article img {
+    float: left;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+aside {
+    flex: 1;
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+aside ul {
+    list-style-type: none;
+}
+
+aside li {
+    margin: 10px 0;
+}
+
+/* Image Gallery */
+.gallery {
+    padding: 20px;
+}
+
+.gallery-item {
+    display: inline-block;
+    margin: 10px;
+    outline: 2px solid #333;
+    position: relative;
+    z-index: 5;
+}
+
+.gallery-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.gallery-item p {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px;
+    z-index: 2;
+}
+
+/* Form Section */
+.form-section {
+    padding: 20px;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-section label {
+    margin-bottom: 10px;
+}
+
+.form-section input[type="text"],
+.form-section input[type="email"] {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-section input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-section button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+   
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">MyLogo</div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content">
+            <article>
+                <h1>Welcome to My Website</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <img src="https://via.placeholder.com/150" alt="Sample Image">
+                <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </article>
+            <aside>
+                <h2>Sidebar</h2>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </aside>
+        </div>
+
+        <section class="gallery">
+            <h2>Image Gallery</h2>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200" alt="Gallery Image 1">
+                <p>Caption 1</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200" alt="Gallery Image 2">
+                <p>Caption 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="https://via.placeholder.com/200" alt="Gallery Image 3">
+                <p>Caption 3</p>
+            </div>
+        </section>
+
+        <section class="form-section">
+            <h2>Sign Up</h2>
+            <form action="#">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                
+                <label>
+                    <input type="checkbox" name="terms">
+                    Accept terms and conditions
+                </label>
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+    </footer>
+</body>
+</html>

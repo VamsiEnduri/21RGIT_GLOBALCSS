@@ -1,0 +1,15 @@
+body{
+    background-color: var(--back_color);
+}
+p{
+    background-color: var(--notok-color);
+    border: 2px solid black;
+}
+button[type="submit"]{
+  background-color: var(--submit-btn-color);
+  font-size: var(--font-submit-btn);
+}
+button[type="reset"]{
+    background-color: var(--resert-btn-color);
+    font-size: var(--font-reset-btn);
+}

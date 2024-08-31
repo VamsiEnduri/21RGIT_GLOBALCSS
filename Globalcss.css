@@ -1,0 +1,10 @@
+@import url("./Day6.css");
+
+:root{
+    --back_color:lightblue;
+    --notok-color:yellow;
+    --submit-btn-color:green;
+    --resert-btn-color:lightcoral;
+    --font-submit-btn:3em;
+    --font-reset-btn:2em;
+}
